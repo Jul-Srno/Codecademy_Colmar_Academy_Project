@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colmar Academy</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./resources/style.css">
+  </head>
+  <body>
+    <header>
+    <!-- header element implicitly has role="banner", no need to add -->
+      <nav class="navbar_computer" aria-label="Desktop navigation">
+        <span class="logo">
+          <img src="./resources/images/ic-logo.svg" alt="Colmar_Academy_Logo" aria-hidden="true">
+          <span class="name">COLMAR</span>
+          <span class="name" id="academy">ACADEMY</span>
+        </span>
+        <ul>
+          <li><a href="#">On campus</a></li>
+          <li><a href="#">Online</a></li>
+          <li><a href="#">For companies</a></li>
+          <li><a href="#">Sign in</a></li>
+        </ul>
+      </nav>
+      <nav class="navbar_mobile" aria-label="Mobile navigation">
+        <img src="./resources/images/ic-logo.svg" alt="Colmar_Academy_Logo">
+        <img src="./resources/images/ic-on-campus.svg" alt="On campus page">
+        <img src="./resources/images/ic-online.svg" alt="Online page">
+        <img src="./resources/images/ic-login.svg" alt="Login page">
+      </nav>
+    </header>
+    <main>
+      <section id="banner" aria-label="Hero banner">
+        <div id="banner_photo">
+          <img src="./resources/images/banner.jpg" alt="students learning in Colmar Academy">
+        </div>
+        <article id="presentation">
+          <div id="presentation_text">
+            <h2>Learn something new everyday</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            <div id="button_container">
+            <!-- <button> is fine here, but if it ever ends up inside a form, type="button" would avoid it acting as a submit by default -->
+              <button class="btn"><span>Start Here</span></button>
+            </div>
+          </div>
+        </article>
+      </section>
+      <section id="information" aria-label="Information section">
+        <article id="information_text">
+          <figure id="info_photo">
+            <img src="./resources/images/information-main.jpg" alt="information image">
+          </figure>
+          <div id="info_presentation">
+            <h2>It doesn't hurt to keep practicing</h2>
+            <blockquote>"Curabitur vitae libero in ipsum porttitor consequat. 
+            Aliquam et comodo lectus,<br />nec consequat neque. Sed non accumsan urna. 
+            Phasellus sed consequat ex.Etiam<br />eget magna laoreet, efficitur dolor consequat, 
+            tristique ligula."</blockquote>
+            <span> Emmanuel, Sr Strategist at hiring.com</span>
+          </div>
+        </article>
+        <section id="info_list" aria-label="Information items">
+          <div class="info_item" id="orientation_date_item" aria-labelledby="info_item_text_orientation">
+            <img src="./resources/images/information-orientation.jpg" alt="orientation image" aria-hidden="true">
+            <div class="info_item_text" id="info_item_text_orientation">
+              <h3>Orientation date</h3>
+              <p>Tue 10/11 & Wed 10/12: 8am-3pm</p>
+              <a href="#">Read more</a>
+            </div>
+          </div>
+          <div class="info_item" aria-labelledby="info_item_text_campus">
+            <img src="./resources/images/information-campus.jpg" alt="campus image" aria-hidden="true">
+            <div class="info_item_text" id="info_item_text_campus">
+              <h3>Our campus</h3>
+              <p>Find which campus is close by you</p>
+              <a href="#">Read more</a>
+            </div>
+          </div>
+          <div class="info_item" id="guest-lecturers_item" aria-labelledby="info_item_text_guest">
+            <img src="./resources/images/information-guest-lecture.jpg" alt="guest-lecture image" aria-hidden="true">
+            <div class="info_item_text" id="info_item_text_guest">
+              <h3>Our guest lecture</h3>
+              <p>Join a keynote with Olivier Sack about music in medical treatment</p>
+              <a href="#">Read more</a>
+            </div>
+          </div>
+        </section>
+        <section id="info_list-mobile" aria-label="Mobile information items">
+        <!-- IDs added so aria-labelledby can reference those elements for screen readers --> 
+          <div class="info_item-mobile" aria-labelledby="info_item_text_orientation_mobile">
+            <img src="./resources/images/information-orientation-mobile.jpg" alt="orientation image mobile" aria-hidden="true">
+            <div class="info_item_text-mobile" id="info_item_text_orientation_mobile">
+              <h3>Orientation date</h3>
+              <p>Tue 10/11 & Wed 10/12: 8am-3pm</p>
+              <a href="#">Read more</a>
+            </div>
+          </div>
+          <div class="info_item-mobile" aria-labelledby="info_item_text_campus_mobile">
+            <img src="./resources/images/information-campus-mobile.jpg" alt="campus image mobile" aria-hidden="true">
+            <div class="info_item_text-mobile" id="info_item_text_campus_mobile">
+              <h3>Our campus</h3>
+              <p>Find which campus is close by you</p>
+              <a href="#">Read more</a>
+            </div>
+          </div>
+          <div class="info_item-mobile" aria-labelledby="info_item_text_guest_mobile">
+            <img src="./resources/images/information-guest-lecture-mobile.jpg" alt="guest-lecture image mobile" aria-hidden="true">
+            <div class="info_item_text-mobile" id="info_item_text_guest_mobile">
+              <h3>Special guest lecture</h3>
+              <p>Join a keynote with Olivier Sack about music in medical treatment</p>
+              <a href="#">Read more</a>
+            </div>
+          </div>
+        </section>
+      </section>
+      <section id="courses" aria-label="Courses section">
+        <h2>Start learning</h2>
+        <div id="course_list">
+          <article class="course_item" aria-labelledby="course-software-title">
+            <img src="./resources/images/course-software.jpg" alt="Software engineering course image">
+            <div class="course_item_text">
+              <h3 id="course-software-title">Software engineering</h3>
+              <span>COURSES</span>
+              <p>Web development, Mobile Development, iOT, APIs</p>
+            </div>
+          </article>
+          <article class="course_item" id="computer_art" aria-labelledby="course-computer-art-title">
+            <img src="./resources/images/course-computer-art.jpg" alt="Computer art course image">
+            <div class="course_item_text">
+              <h3 id="course-computer-art-title">Computer art</h3>
+              <span>COURSES</span>
+              <p>Imaging & Design, Web Design, Motion Graphics & Visual Effects, Computer Animation</p>
+            </div>
+          </article>
+          <article class="course_item" id="design_course_item" aria-labelledby="course-design-title">
+            <img src="./resources/images/course-design.jpg" alt="Design course image">
+            <div class="course_item_text">
+              <h3 id="course-design-title">Design</h3>
+              <span>COURSES</span>
+              <p>User Experience Design, User Research, Visual Design</p>
+            </div>
+          </article>
+          <article class="course_item" aria-labelledby="course-data-title">
+            <img src="./resources/images/course-data.jpg" alt="Data course image">
+            <div class="course_item_text">
+              <h3 id="course-data-title">Data</h3>
+              <span>COURSES</span>
+              <p>Data Science, Big data, SQL, Data Vizualization</p>
+            </div>
+          </article>
+          <article class="course_item" aria-labelledby="course-business-title">
+            <img src="./resources/images/course-business.jpg" alt="Business course image">
+            <div class="course_item_text">
+              <h3 id="course-business-title">Business</h3>
+              <span>COURSES</span>
+              <p>Product Development, Business Development, Startup</p>
+            </div>
+          </article>
+          <article class="course_item" aria-labelledby="course-marketing-title">
+            <img src="./resources/images/course-marketing.jpg" alt="Marketing course image">
+            <div class="course_item_text">
+              <h3 id="course-marketing-title">Marketing</h3>
+              <span>COURSES</span>
+              <p>Analytics, Content Marketing, Mobile Marketing</p>
+            </div>
+          </article>
+        </div>
+      </section>
+      <section id="courses_mobile" aria-label="Mobile courses section">
+        <h2 class="h2_title-mobile">Start learning</h2>
+        <div id="course_list-mobile">
+          <article class="course_item-mobile" aria-labelledby="course-software-mobile-title">
+            <a href="#" id="course-software-mobile-title"><h3>Software engineering</h3></a>
+          </article>
+          <article class="course_item-mobile" aria-labelledby="course-computer-art-mobile-title">
+            <a href="#" id="course-computer-art-mobile-title"><h3>Computer art</h3></a>
+          </article>
+          <article class="course_item-mobile" aria-labelledby="course-design-mobile-title">   
+            <a href="#" id="course-design-mobile-title"><h3>Design</h3></a>
+          </article>
+          <article class="course_item-mobile" aria-labelledby="course-data-mobile-title">
+            <a href="#" id="course-data-mobile-title"><h3>Data</h3></a>
+          </article>
+          <article class="course_item-mobile" aria-labelledby="course-business-mobile-title">
+            <a href="#" id="course-business-mobile-title"><h3>Business</h3></a>
+          </article>
+          <article class="course_item-mobile" aria-labelledby="course-marketing-mobile-title">
+            <a href="#" id="course-marketing-mobile-title"><h3>Marketing</h3></a>
+          </article>
+        </div>
+      </section>
+      <section id="Thesis_exhibit" aria-label="Thesis exhibit section">
+        <h2>Thesis exhibit</h2>
+        <div id="Thesis_exhibit_content">
+          <video src="./resources/videos/thesis.mp4" controls title="Thesis exhibit video"></video>
+          <div id="Thesis_exhibit_items_container">
+            <article id="Fisma" class="Thesis_exhibit_item" aria-labelledby="Fisma-title">
+              <img src="./resources/images/thesis-fisma.jpg" alt="thesis fisma image" aria-hidden="true">
+              <div class="Thesis_exhibit_item_text">
+                <h3 id="Fisma-title">Fisma: Design and Prototype</h3>
+                <span>Designer showcase of new prototype product</span>            
+              </div>
+            </article>    
+            <article class="Thesis_exhibit_item" aria-labelledby="NowAndThen-title">
+              <img src="./resources/images/thesis-now-and-then.jpg" alt="thesis now and then image" aria-hidden="true">
+              <div class="Thesis_exhibit_item_text">
+                <h3 id="NowAndThen-title">Now and then</h3>
+                <span>Research study about New York</span>
+              </div>
+            </article>            
+          </div>
+        </div>
+      </section>  
+      <section id="Thesis_exhibit-mobile" aria-label="Thesis exhibit mobile section">
+        <h2 class="h2_title-mobile">Thesis exhibit</h2>
+        <div id="Thesis_exhibit_content-mobile">
+          <video src="./resources/videos/thesis.mp4" controls title="Thesis exhibit video mobile"></video>
+        </div>
+      </section>
+    </main>
+    <footer id="footer">
+    <!-- Footer element implicitly has role="contentinfo", links are already accessible -->
+      <span>© 2016 Colmar Academy. All right reserved</span>
+      <span id="Terms_and_privacy">
+      <a href="#" aria-label="Read terms and conditions">Terms</a>
+      <a href="#" aria-label="Read privacy policy">Privacy</a>
+      </span>
+    </footer>
+    <footer id="footer-mobile">
+      <p>© 2016 Colmar Academy. All rights reserved</p>
+    </footer>
+  </body>
+</html>
